@@ -1,9 +1,12 @@
 # life cylce
-- ngOnChanges
-- ngDocheck
-- ngOnInit
-- ngAfterContentInit
-- ngAfterContentChecked
-- ngAfterViewInit
-- ngAfterViewChecked
+- constructor - 가장 먼저 호출
+- ngOnChanges - 최초 초기화 때 / Input 프로퍼티가 변경될 때
+	- Input 데코레이터가 사용된 프로퍼티가 없으면 실행되지 않는다.
+- ngDocheck - 모든 데이터의 변경에 관여
+- ngOnInit - 프로퍼티 초기화 직후
+- ngAfterContentInit - ngContent 사용시 자식이 초기화 된 직후
+- ngAfterContentChecked - ngContent를 통해 HTML을 받을 때
+	- 최초 / 변경시
+- ngAfterViewInit - 템플릿이 모두 초기화 되었을 때
+- ngAfterViewChecked - 템플릿에 바인딩 된 값이 변경되었을 때
 - ngOnDestroy
