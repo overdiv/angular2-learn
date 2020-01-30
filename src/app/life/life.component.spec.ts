@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Sample4Component } from './sample4.component';
+import { LifeComponent } from './life.component';
 
-describe('Sample4Component', () => {
-  let component: Sample4Component;
-  let fixture: ComponentFixture<Sample4Component>;
+describe('LifeComponent', () => {
+  let component: LifeComponent;
+  let fixture: ComponentFixture<LifeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Sample4Component ]
+      declarations: [ LifeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Sample4Component);
+    fixture = TestBed.createComponent(LifeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

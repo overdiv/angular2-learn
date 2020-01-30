@@ -1,8 +1,7 @@
 <div>
-  <span>{{ title }} app is running!</span>
-  <app-sample1></app-sample1>
-  <app-sample1 text="자식에게 내려줄 값" [click]="click" (myEvent)="newEvent()"></app-sample1>
-  <app-sample2></app-sample2>
-  <app-sample3></app-sample3>
-  <app-sample4></app-sample4>
+  <strong>{{ title }} app is running!</strong>
+  <p>
+    <button (click)="plus()">Plus</button>
+  </p>
+  <app-life [obj]="obj"></app-life>
 </div>
