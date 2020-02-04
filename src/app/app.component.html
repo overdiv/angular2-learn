@@ -1,2 +1,15 @@
-<h1>{{ title }}</h1>
+<h2>{{ title }}</h2>
+<nav>
+	<ul>
+		<li>
+		  <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">home</a>
+		</li>
+		<li>
+			<a routerLink="/login" routerLinkActive="active">login</a>
+		</li>
+		<li>
+			<a routerLink="/book/12" routerLinkActive="active">book</a>
+		</li>
+	</ul>
+</nav>
 <router-outlet></router-outlet>
