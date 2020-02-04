@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  desc;
+  data = new Promise(resolve => {
+    setTimeout(() => {
+        resolve('hello');
+    }, 2000);
+  });
 }
