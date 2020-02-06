@@ -2,17 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { LogService } from '../log.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss'],
   providers: [LogService]
 })
-export class HomeComponent implements OnInit {
+export class AboutComponent implements OnInit {
 
   constructor(private log: LogService) { }
 
   ngOnInit() {
-    this.log.info('Home')
+    this.log.info('About');
   }
 
 }
