@@ -4,8 +4,7 @@ import { LogService } from '../log.service';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'],
-  providers: [LogService]
+  styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
 
